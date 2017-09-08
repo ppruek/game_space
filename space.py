@@ -12,13 +12,12 @@ class SpaceGameWindow(arcade.Window):
         self.ship.set_position(100, 100)
     
     def update(self, delta):
-         def update(self, delta):
         ship = self.ship
  
         if ship.center_y > SCREEN_HEIGHT:
             ship.center_y = 0
         ship.set_position(ship.center_x, ship.center_y + 5)
-        
+
     def on_draw(self):
         arcade.start_render()
         self.ship.draw()
