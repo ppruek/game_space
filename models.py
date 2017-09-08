@@ -1,3 +1,4 @@
+import arcade
 class Ship:
     DIR_HORIZONTAL = 0
     DIR_VERTICAL = 1
