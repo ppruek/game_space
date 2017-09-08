@@ -1,5 +1,5 @@
 class Ship:
-    def __init__(self, x, y):
+    def __init__(self, x, y,world):
         self.world = world  
         self.x = x
         self.y = y
@@ -13,9 +13,7 @@ class World:
     def __init__(self, width, height):
         self.width = width
         self.height = height
- 
-        self.ship = Ship(self,100, 100)
- 
+        self.ship = Ship(100, 100, self)
  
     def update(self, delta):
         self.ship.update(delta)        
