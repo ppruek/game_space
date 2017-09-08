@@ -1,5 +1,6 @@
 import arcade
 from models import Ship
+
 SCREEN_WIDTH = 600
 SCREEN_HEIGHT = 600
  
@@ -13,7 +14,7 @@ class SpaceGameWindow(arcade.Window):
     
     def on_draw(self):
         arcade.start_render()
-        self.ship.draw()
+        self.ship_sprite.draw()
 
     def update(self, delta):
         ship = self.ship
