@@ -1,10 +1,11 @@
 class Ship:
     def __init__(self, x, y):
+        self.world = world  
         self.x = x
         self.y = y
  
     def update(self, delta):
-        if self.y > 600:
+        if self.y > self.world.height:
             self.y = 0
         self.y += 5
 
