@@ -14,7 +14,7 @@ class World:
         self.width = width
         self.height = height
  
-        self.ship = Ship(100, 100)
+        self.ship = Ship(self,100, 100)
  
  
     def update(self, delta):
