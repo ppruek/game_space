@@ -13,7 +13,6 @@ class SpaceGameWindow(arcade.Window):
     def on_draw(self):
         arcade.start_render()
  
- 
 if __name__ == '__main__':
     window = SpaceGameWindow(SCREEN_WIDTH, SCREEN_HEIGHT)
     arcade.run()
